@@ -136,8 +136,8 @@ func updateCache(cache map[primitive.ObjectID][2]string) {
 				return
 			}
 			cache[elem.ID] = [2]string{elem.Firstname, elem.Lastname}
-			fmt.Println("Обновление кеша завершено. Записей всего:", len(cache))
-			time.Sleep(time.Second * 100)
 		}
+		fmt.Println("Обновление кеша завершено. Записей всего:", len(cache))
+		time.Sleep(time.Second * 100)
 	}
 }
